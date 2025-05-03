@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link href="input.css" rel="stylesheet">
+</head>
+<body>
+  <div class="text-center py-8 rounded-b-xl bg-blue-600 h-100 flex items-center justify-center flex-col ">
+    <h1 class="text-4xl font-bold text-white xl:text-5xl">Weather App</h1>
+    <p class="w-[80%] mt-4 text-white xl:w-[60%]">Search and view real-time weather forecasts by city or your current location, interact through buttons and dropdowns, and access recently searched cities stored locally.</p>
+  </div>
+  <div class="bg-white p-10 shadow-2xl w-auto m-4 mb-10 relative top-[-50px] rounded-md flex gap-6 justify-center items-center flex-wrap md:top-[-100px] lg:flex-nowrap xl:w-[80%] xl:m-auto">
+    <form class="flex gap-4 md:w-[-webkit-fill-available]">
+      <input class="border-1 border-gray-400 px-6 py-3 rounded-md md:w-[-webkit-fill-available]" placeholder="Enter Your City"  type="text" >
+      <input class="bg-amber-300 p-3 rounded-md" type="submit" >
+    </form>
+    <div class="w-px h-10 bg-gray-200 mx-2 hidden lg:block"></div>
+    <button class="bg-blue-600 text-white px-6 py-3 w-[-webkit-fill-available] rounded-md flex gap-2 justify-center">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
+      </svg> 
+      Use Current Location
+    </button>
+    <div class="w-px h-10 bg-gray-200 mx-2 hidden lg:block"></div>
+    <select
+    id="recent-cities"
+    class="w-[-webkit-fill-available] rounded-md border border-gray-300 bg-white pr-10 pl-4 py-3 text-sm shadow-sm focus:border-blue-500 focus:ring-blue-500 lg:w-auto">
+    <option value="" disabled selected hidden>Select a city</option>
+    <option value="delhi">Delhi</option>
+  </select>
+  </div>
+
+  <section class="flex gap-4 flex-wrap justify-center items-center m-4 w-auto">
+    <div class="bg-blue-500 text-white p-3 shadow-2xl  w-[-webkit-fill-available] mb-10 rounded-md flex gap-6 justify-between flex-col xl:w-auto">
+      <span class="text-xl p-2 bg-blue-400 rounded-md">02-03-2025</span>
+      <div class="text-left p-2">
+        <div class="flex gap-6 flex-col-reverse md:flex-row md:justify-between md:p-6">
+          <div>
+          <div class="flex gap-4 items-center  mb-2">
+            <span class="text-2xl font-semibold">London</span>
+          </div>
+          <div class="flex gap-4 items-center mb-2">
+            <span class="text-md">Temperature</span>
+            <span class="text-md">54 degree</span>
+          </div>
+          <div class="flex gap-4 items-center mb-2">
+            <span class="text-md">Wind</span>
+            <span class="text-md">54 degree Celsius</span>
+          </div>
+          <div class="flex gap-4 items-center mb-2">
+            <span class="text-md">Humidity</span>
+            <span class="text-md">54 degree Celsius</span>
+          </div>
+        </div>
+          <div>
+            <img class="w-30" src="src/images/cloudy.png">
+          </div>
+        </div>
+        
+        </div>
+    </div>
+    <div class="bg-blue-500 text-white p-3 shadow-2xl  w-[-webkit-fill-available] mb-10 rounded-md flex gap-6 justify-between flex-col xl:w-auto">
+      <span class="text-xl p-2 bg-blue-400 rounded-md">02-03-2025</span>
+      <div class="text-left p-2">
+        <div class="flex gap-6 flex-col-reverse md:flex-row md:justify-between md:p-6">
+          <div>
+          <div class="flex gap-4 items-center  mb-2">
+            <span class="text-2xl font-semibold">London</span>
+          </div>
+          <div class="flex gap-4 items-center mb-2">
+            <span class="text-md">Temperature</span>
+            <span class="text-md">54 degree</span>
+          </div>
+          <div class="flex gap-4 items-center mb-2">
+            <span class="text-md">Wind</span>
+            <span class="text-md">54 degree Celsius</span>
+          </div>
+          <div class="flex gap-4 items-center mb-2">
+            <span class="text-md">Humidity</span>
+            <span class="text-md">54 degree Celsius</span>
+          </div>
+        </div>
+          <div>
+            <img class="w-30" src="src/images/cloudy.png">
+          </div>
+        </div>
+        
+        </div>
+    </div>
+  
+  </section>
+
+
+</body>
+<script src="index.js"></script>
+</html>
