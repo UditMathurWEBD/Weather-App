@@ -31,3 +31,6 @@ This is a simple weather forecast web app built using HTML, CSS, JavaScript, and
    ```bash
    git clone https://github.com/your-username/weather-app.git
    cd weather-app
+   
+## Before Running :
+npm install
